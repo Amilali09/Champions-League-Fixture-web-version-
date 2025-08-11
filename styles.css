@@ -1,0 +1,548 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+select{
+    height: 22px;
+    font-size: 15px;
+background-color: rgba(147, 93, 218, 0.386);
+}
+
+#nav {
+    display: flex;
+    gap: 120px;
+    z-index: 10;
+    align-self: center;
+    justify-content: center;
+    position: fixed;
+    height: 45px;
+    width: 100vw;
+    color: rgba(246, 246, 248, 0.847);
+    border: 2px solid transparent;
+    background-color: rgba(19, 6, 104, 0.282);
+    margin-top: 10vh;
+}
+
+.f,
+.s {
+    box-sizing: border-box;
+    padding-top: 6px;
+    color: azure;
+    font-weight: 700;
+    font-size: 25px;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 1px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border-top-color: aliceblue;
+    border-bottom-color: aliceblue;
+}
+
+.f {
+    border: none;
+    font-size: 30px;
+
+}
+
+.cont {
+    height: 70vh;
+    width: 65vw;
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: fixed;
+    background-color: rgba(226, 230, 238, 0.148);
+    top: 20vh;
+    left: 17vw;
+    border-radius: 20px;
+    padding: 5px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.cont::-webkit-scrollbar {
+    display: none;
+}
+
+.box {
+    height: 25vh;
+    /* height: 90%; */
+    width: 14vw;
+    border: 4px solid black;
+    margin: auto;
+    background-color: rgba(135, 159, 224, 0.229);
+    border-radius: 15px;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    height: 30px;
+    width: 100%;
+    background-color: rgba(135, 159, 224, 0.229);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+body {
+    background-image: url('https://wallpapers.com/images/high/uefa-champions-league-star-bowl-rlsrfh81jsb88ed1.webp');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#nm {
+    width: 65vw;
+    height: 6vh;
+    display: flex;
+    gap: 1.5vw;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgid{
+    max-height: 90%;
+    max-width: 90%;
+}
+
+.sp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14.3vw;
+    padding: 5px;
+    height: 5vh;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 0.5vw;
+    box-sizing: border-box;
+    border-radius: 11px;
+    background-color: rgba(189, 197, 200, 0.766);
+}
+
+#card {
+    /* border: 2px solid rgb(213, 213, 163); */
+    height: 80vh;
+    width: 45vw;
+    background-color: rgba(137, 75, 182, 0.297);
+    /* background-color: brown; */
+    color: beige;
+    position: fixed;
+    top: 15vh;
+    left: 27vw;
+    border-radius: 15px;
+    display: block;
+}
+
+#nav2 {
+    /* border: 2px solid white; */
+    background-color: rgba(0, 0, 0, 0.27);
+    width: 45vw;
+    height: 12vh;
+    display: flex;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-size: 25px;
+    position: relative;
+    position: sticky;
+    top: 0px;
+}
+
+#mt,
+#tm {
+    /* border: 2px solid black; */
+    height: 12vh;
+}
+
+#mt {
+    width: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tm {
+    width: 35vw;
+    justify-content: center;
+}
+
+#t {
+    width: 35vw;
+    /* border: 2px solid wheat; */
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ha {
+    display: flex;
+}
+
+.hm,
+.aw {
+    /* border: 2px solid green; */
+    box-sizing: border-box;
+    width: 22.5vw;
+    display: flex;
+    justify-content: center;
+}
+
+.aw {
+    padding-left: 1vw;
+}
+
+.hm {
+    border-right: 3px solid black;
+    padding-right: 3vw;
+}
+
+#matchup {
+    box-sizing: border-box;
+    /* border: 2px solid rgba(53, 95, 210, 0.607); */
+    height: 25vh;
+    padding: 2px;
+    width: 45vw;
+    background-image: linear-gradient(to right, #00000047,rgba(32, 83, 122, 0.57), #e2d7d746,rgba(52, 92, 158, 0.592),rgba(0, 0, 0, 0.307));
+    display: block;
+    display: flex;
+    box-sizing: border-box;
+}
+
+#matchno,
+#vs,
+#team1,
+#team2 {
+    /* border: 2px solid black; */
+    height: 25vh;
+    box-sizing: border-box;
+}
+
+#matchno,
+#vs {
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: black;
+    font-weight: 800;
+}
+
+#vs {
+    width: 5vw;
+}
+
+#team1,
+#team2 {
+    width: 15vw;
+    height: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#scr {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 58vh;
+}
+
+#scr::-webkit-scrollbar {
+    display: none;
+}
+
+#timg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+#rule{
+    position: fixed;
+    top: 20vh;
+    left: 23vw;
+    background-color: rgba(62, 138, 186, 0.408);
+    height: 70vh;
+    width: 55vw;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+.navrule{
+    width: 100%;
+    height: 10vh;
+    background-image: linear-gradient(to right, #00000047,rgba(32, 83, 122, 0.57), #e2d7d746,rgba(52, 92, 158, 0.592),rgba(0, 0, 0, 0.307));
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 1px solid skyblue;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#con,#card{
+    display: none;
+}
+
+.displayrule{
+    height: 59vh;
+    width: 100%;
+    font-size: x-large;
+    box-sizing: border-box;
+    line-height: 30px;
+    padding: 10px;
+    color: aliceblue;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-image: linear-gradient(to right,rgba(135, 207, 235, 0.473),rgba(57, 94, 154, 0.734),rgba(61, 61, 137, 0.641),rgba(57, 94, 154, 0.685),rgba(135, 207, 235, 0.773));
+}
+
+#football{
+    height: 17px;
+}
+
+/* -----------------------------media quries------------------------------------ */
+/* --- Responsive Media Queries --- */
+
+/* Tablets and small desktops */
+@media only screen and (max-width: 768px) {
+    #nav {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+        margin-top: 2vh;
+    }
+    .f, .s {
+        font-size: 20px;
+        padding: 8px 12px;
+    }
+    .cont {
+        width: 90vw;
+        left: 5vw;
+        top: 25vh;
+        height: 60vh;
+    }
+    #card, #rule {
+        width: 90vw;
+        left: 5vw;
+        top: 15vh;
+        height: 75vh;
+    }
+    #nav2 {
+        width: 90vw;
+        font-size: 22px;
+    }
+    #mt { width: 25vw; }
+    #tm { width: 65vw; }
+    .hm, .aw { width: 32.5vw; }
+    #matchup { width: 90vw; }
+    #scr { height: 50vh; }
+}
+
+/* Mobile phones */
+@media only screen and (max-width: 450px) {
+
+    body{
+        background-image: url('https://w0.peakpx.com/wallpaper/763/261/HD-wallpaper-champions-league-champions-football-league-soccer-uefa.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    #nav {
+        width: 100vw;
+        height: 6vh;
+        top: 0px;
+        display: flex;
+        position: absolute;
+        flex-direction: row;
+        gap: 3vw;
+        margin-top: 1vh;
+    }
+    .f, .s {
+        font-size: 14px;
+        padding: 6px 10px;
+        width: 20vw;
+        height: 4vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .f{
+        font-size: small;
+        margin-left: 0px;
+        margin-top: 1vh;
+    }
+
+    select {
+        width: 100%;
+        font-size: 14px;
+        height: 30px;
+    }
+    .cont {
+        width: 90vw;
+        margin-left: auto;
+        top: 10vh;
+        height: 60vh; 
+    }
+
+    #nm{
+        width:90vw;
+        height: 3vh;
+        gap: 2vw;
+    }
+
+    .box,.sp{
+        width: 20vw;
+        height: 2vh;
+        font-size: 6px;
+        gap: 2vw;
+    }
+    .box{
+        height: 10vh;
+    }
+
+    #imgid{
+        max-height: 90%;
+        max-width: 85%;
+    }
+
+    #nav2 {
+        height: 10vh;
+        font-size: 18px;
+    }
+
+    #card {
+        width: 90vw;
+        margin: auto;
+        top: 12vh;
+        height: 70vh;
+    }
+    #mt{
+        height: 100%;
+        width: fit-content;
+        /* border: 2px solid yellow; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #tm{
+        max-height: 100%;
+        /* border: 2px solid green; */
+
+    }
+
+    #t{
+        width: 70vw;
+        /* border: 2px solid white; */
+        height: 49%;
+    }
+
+    #ha{
+        width: 70vw;
+        height: 49%;
+    }
+
+    #hm,#aw{
+        width: 35vw;
+        height: 100%;
+    }
+
+    #hm{
+        border-right: 0.1px;
+    }
+
+    .btn{
+        width: 98%;
+        height: 5vh;
+        font-size: 16px;
+        padding-left: 1vw;
+    }
+
+    #scr{
+        width: 99%;
+        height: 55vh;
+        /* border: 2px solid wheat; */
+    }
+
+    #matchup{
+        /* border: 2px solid wheat; */
+        width: 100%;
+        height: 15vh;
+    }
+
+    #matchno{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 15%;
+        color: azure;
+    }
+
+    #team1{
+        /* border: 2px solid yellow; */
+        width: 33vw;
+        height: 100%;
+    }
+
+    #timg{
+        max-width: 85%;
+        max-height: 90%;
+    }
+
+    #vs{
+        width: 8%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    #team2{
+        width: 33vw;
+        height: 100%;
+    }
+
+    #rule{
+        /* border: 2px solid yellow; */
+        top: 15vh;
+        height: 50vh;
+    }
+
+    .navrule{
+        height: 7vh;
+        /* border: 2px solid yellow; */
+    }
+
+    .displayrule{
+        /* border: 2px solid green; */
+        width: 100%;
+        height: 42.5vh;
+    }
+
+    #football{
+        height: 12px;
+        /* background-color: yellow; */
+    }
+    #p{
+        font-size: 10px;
+        line-height: 4px;
+        height: fit-content;
+    }
+
+}
